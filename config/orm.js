@@ -1,23 +1,20 @@
 // Import the MySQL connection object
-var connection = require ('./connection.js');
+var connection = require('./connection.js');
 
 var orm = {
 
-    select: function(col, table, cb)
-    {
+    selectAll: function(tableInput, cb){
+      connection.query('SELECT * FROM '+tableInput+';', function(err,
+      result){
+        if(err) throw err;
+        cb(result)
+      })
+    }
 
-        var queryString = "SELECT ?? FROM ??";
-        connection.query(queryString, [col, table], function(err, result){
-                if(err)throw err;
+    insertOne:
 
-              console.log(result);
 
-              cb(err, result);
-
-        });
-
-      }
-
+    updateOne:
 
 
 
