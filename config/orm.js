@@ -3,7 +3,7 @@ var connection = require('./connection.js');
 
 var orm = {
 
-    selectAll: function(tableInput, cb){
+    all: function(tableInput, cb){
       connection.query('SELECT * FROM '+tableInput+';', function(err,
       result){
         if(err) throw err;
@@ -11,10 +11,10 @@ var orm = {
       })
     }
 
-    insertOne:
-
-
-    updateOne:
+    // insertOne:
+    //
+    //
+    // updateOne:
 
 
 
