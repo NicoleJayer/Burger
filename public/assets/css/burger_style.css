@@ -4,4 +4,48 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+}
+
+.container {
+  background-color:rgba(24,46,32,0.5);
+  margin-top: 40px;
+  color: white;
+  text-shadow: -.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px black;
+  padding-bottom: 20px;
+
+}
+
+.enter_section {
+  padding-top: 20px;
+}
+
+#text-enter-button {
+  margin-top: 20px;
+}
+
+#devourButton {
+  /* margin-left: 50px; */
+  margin-top: -20px;
+  padding-bottom: 20px;
+}
+
+pre {
+  color: white;
+}
+
+h1 {
+  border: 0px;
+  border-bottom: 5px;
+  border-color: white;
+  border-style: solid;
+  font-family: 'Monoton', cursive;
+}
+
+.form-control {
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Ubuntu Condensed', sans-serif;
 }
